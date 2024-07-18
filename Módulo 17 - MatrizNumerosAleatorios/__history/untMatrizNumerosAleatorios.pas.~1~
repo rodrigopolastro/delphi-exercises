@@ -1,0 +1,185 @@
+unit untMatrizNumerosAleatorios;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids;
+
+type
+  TfrmMain = class(TForm)
+    lblTitle: TLabel;
+    edtMin: TEdit;
+    edtMax: TEdit;
+    lblMin: TLabel;
+    lblMax: TLabel;
+    btnGenerate: TButton;
+    memNumbersList: TMemo;
+    lblListTitle: TLabel;
+    lblSum: TLabel;
+    lblAverage: TLabel;
+    lblCount: TLabel;
+    lblGreatest: TLabel;
+    cmbFilter: TComboBox;
+    lblNumbersQuantity: TLabel;
+    edtNumbersQuantity: TEdit;
+    lblSmallest: TLabel;
+    btnOrderList: TButton;
+    procedure btnGenerateClick(Sender: TObject);
+    procedure btnOrderListClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+const MAX_ARRAY_SIZE = 100;
+
+var
+  frmMain: TfrmMain;
+  listSize: Integer;
+
+type numbersList = array[1..MAX_ARRAY_SIZE] of integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure ClearList();
+begin
+  frmMain.memNumbersList.Clear;
+end;
+
+function CalcListSum(var list: numbersList; length: Integer): Integer;
+	var i, sum: Integer;
+begin
+	sum := 0;
+  for i := 1 to length do
+  	sum := sum + list[i];
+
+  Result := sum;
+end;
+
+function FindGreatestNumber(var list: numbersList; length: Integer): Integer;
+	var i, greatest: Integer;
+begin
+	greatest := list[1];
+  for i := 1 to length do
+  begin
+    if list[i] > greatest then
+    	greatest := list[i]
+  end;
+
+  Result := greatest;
+end;
+
+function FindSmallestNumber(var list: numbersList; length: Integer): Integer;
+	var i, smallest: Integer;
+begin
+	smallest := list[1];
+  for i := 1 to length do
+  begin
+    if list[i] < smallest then
+    	smallest := list[i]
+  end;
+
+  Result := smallest;
+end;
+
+function GenerateNumbersList(numbersQuantity, min, max: Integer): numbersList;
+  var list : numbersList;
+  var number, i: Integer;
+begin
+	frmMain.lblTitle.Caption := '';
+	Randomize;
+	for i := 1 to numbersQuantity do
+  begin
+    number := Random(max - min + 1) + min;
+    list[i] := number;
+  end;
+
+  Result := list;
+end;
+
+procedure ShowComponents();
+begin
+  frmMain.lblListTitle.Visible := True;
+	frmMain.cmbFilter.Visible := True;
+  frmMain.btnOrderList.Visible := True;
+  frmMain.memNumbersList.Visible := True;
+  frmMain.lblCount.Visible := True;
+  frmMain.lblSum.Visible := True;
+  frmMain.lblAverage.Visible := True;
+  frmMain.lblSmallest.Visible := True;
+  frmMain.lblGreatest.Visible := True;
+end;
+
+procedure ShowList(var list: numbersList; listLength: Integer);
+	var i: Integer;
+begin
+	frmMain.memNumbersList.Clear;
+	for i := 1 to listLength do
+  	frmMain.memNumbersList.Lines.Append(IntToStr(list[i]));
+
+end;
+
+procedure ShowListInfo(var list: numbersList; listLength: Integer);
+  var listSum: Integer;
+  var listAverage: Real;
+begin
+  frmMain.lblCount.Caption := 'Quantidade de Números: ' + IntToStr(listLength);
+
+  listSum := CalcListSum(list, listLength);
+  listAverage := listSum / listLength;
+
+  frmMain.lblSum.Caption := 'Soma: ' + IntToStr(listSum);
+  frmMain.lblAverage.Caption := 'Média: ' + FormatFloat('#.##', listAverage);
+   frmMain.lblSmallest.Caption
+  	:= 'Menor número: ' + IntToStr(FindSmallestNumber(list, listLength));
+  frmMain.lblGreatest.Caption
+  := 'Maior número: ' + IntToStr(FindGreatestNumber(list, listLength));
+end;
+
+procedure OrderNumbersList();
+	var i, j, aux, listLength: Integer;
+  var list: numbersList;
+begin
+	listLength := frmMain.memNumbersList.Lines.Count;
+  for i := 1 to listLength do
+    list[i] := StrToInt(frmMain.memNumbersList.Lines[i-1]);
+
+  for i := 1 to listLength do
+  	for j := 1 to listLength do
+    	if list[i] < list[j] then
+      begin
+      	aux := list[i];
+        list[i] := list[j];
+        list[j] := aux;
+      end;
+
+  ShowList(list, listLength);
+end;
+
+
+procedure TfrmMain.btnGenerateClick(Sender: TObject);
+var
+	numbersQuantity, min, max: Integer;
+  list: numbersList;
+begin
+	numbersQuantity := StrToInt(frmMain.edtNumbersQuantity.Text);
+	min := StrToInt(frmMain.edtMin.Text);
+  max := StrToInt(frmMain.edtMax.Text);
+
+  list := GenerateNumbersList(numbersQuantity, min, max);
+
+  ShowList(list, numbersQuantity);
+  ShowListInfo(list, numbersQuantity);
+  ShowComponents();
+end;
+
+procedure TfrmMain.btnOrderListClick(Sender: TObject);
+begin
+	OrderNumbersList();
+end;
+
+end.

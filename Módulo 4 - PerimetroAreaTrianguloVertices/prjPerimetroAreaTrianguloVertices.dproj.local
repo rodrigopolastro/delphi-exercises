@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/07/15 14:28:29.000.016,=\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 14:31:25.000.665,\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.dfm=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\untExercicio4.dfm</Transaction>
+    <Transaction>2024/07/15 14:31:25.000.665,\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.pas=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\untExercicio4.pas</Transaction>
+    <Transaction>2024/07/15 14:31:35.000.463,\\192.168.0.1\Publica\rodrigo.silva\Projetos\Project1.dproj=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\prjExercicio4.dproj</Transaction>
+    <Transaction>2024/07/15 14:45:59.000.122,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\untExercicio4.dfm=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\untPerimetroAreaTrianguloVertices.dfm</Transaction>
+    <Transaction>2024/07/15 14:45:59.000.122,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\untExercicio4.pas=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\untPerimetroAreaTrianguloVertices.pas</Transaction>
+    <Transaction>2024/07/15 14:46:07.000.496,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\prjExercicio4.dproj=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\4-PerimetroAreaTrianguloVertices\prjPerimetroAreaTrianguloVertices.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

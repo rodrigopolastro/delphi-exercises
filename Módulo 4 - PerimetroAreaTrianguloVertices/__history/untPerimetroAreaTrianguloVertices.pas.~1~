@@ -1,0 +1,46 @@
+unit untPerimetroAreaTrianguloVertices;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmMyForm = class(TForm)
+    lblTitle: TLabel;
+    btnCalculate: TButton;
+    lblVertice1: TLabel;
+    lblX1: TLabel;
+    edtX1: TEdit;
+    lblY1: TLabel;
+    edtY1: TEdit;
+    btnClear: TButton;
+    lblVertice2: TLabel;
+    lblX2: TLabel;
+    edtX2: TEdit;
+    lblY2: TLabel;
+    edtY2: TEdit;
+    lblVertice3: TLabel;
+    lblX3: TLabel;
+    edtX3: TEdit;
+    lblY3: TLabel;
+    edtY3: TEdit;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMyForm: TfrmMyForm;
+
+implementation
+
+{$R *.dfm}
+
+procedure ClearFields();
+begin
+	frm
+end;

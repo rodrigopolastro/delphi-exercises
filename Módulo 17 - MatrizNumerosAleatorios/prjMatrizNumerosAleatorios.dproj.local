@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/07/17 09:46:28.000.672,=\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.pas</Transaction>
+    <Transaction>2024/07/17 10:14:48.000.459,\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.dfm=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Unit1.dfm</Transaction>
+    <Transaction>2024/07/17 10:14:48.000.459,\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.pas=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Unit1.pas</Transaction>
+    <Transaction>2024/07/17 10:14:50.000.148,\\192.168.0.1\Publica\rodrigo.silva\Projetos\Project1.dproj=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Project1.dproj</Transaction>
+    <Transaction>2024/07/17 12:08:47.000.790,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Project1.dproj=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 17 - MatrizNumerosAleatorios\prjMatrizNumerosAleatorios.dproj</Transaction>
+    <Transaction>2024/07/17 12:09:00.000.675,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Unit1.dfm=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 17 - MatrizNumerosAleatorios\untMatrizNumerosAleatorios.dfm</Transaction>
+    <Transaction>2024/07/17 12:09:00.000.675,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Unit1.pas=\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 17 - MatrizNumerosAleatorios\untMatrizNumerosAleatorios.pas</Transaction>
+  </Transactions>
+</BorlandProject>

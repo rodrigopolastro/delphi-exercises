@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/07/15 13:54:23.001,=\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 13:54:42.376,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\2-DistanciaHorizonte\untDistanciaHorizonte.dfm=\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.dfm</Transaction>
+    <Transaction>2024/07/15 13:54:42.376,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\2-DistanciaHorizonte\untDistanciaHorizonte.pas=\\192.168.0.1\Publica\rodrigo.silva\Projetos\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 13:55:01.145,\\192.168.0.1\Publica\rodrigo.silva\Treinamentos\Delphi\Exercícios Resolvidos\Módulo 4 - Funções matemáticas padrão\2-DistanciaHorizonte\prjDistanciaHorizonte.dproj=\\192.168.0.1\Publica\rodrigo.silva\Projetos\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

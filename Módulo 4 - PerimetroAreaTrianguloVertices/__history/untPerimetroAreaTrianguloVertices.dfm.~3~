@@ -1,0 +1,185 @@
+object frmMyForm: TfrmMyForm
+  Left = 0
+  Top = 0
+  Caption = 'frmMyForm'
+  ClientHeight = 472
+  ClientWidth = 745
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblTitle: TLabel
+    Left = 236
+    Top = 32
+    Width = 303
+    Height = 13
+    Caption = 'Calcular Per'#237'metro e '#193'rea de Tri'#226'ngulo a partir de seus v'#233'rtices'
+  end
+  object lblVertice1: TLabel
+    Left = 32
+    Top = 63
+    Width = 74
+    Height = 13
+    Caption = 'Primeiro V'#233'rtice'
+  end
+  object lblX1: TLabel
+    Left = 32
+    Top = 85
+    Width = 6
+    Height = 13
+    Caption = 'X'
+  end
+  object lblY1: TLabel
+    Left = 100
+    Top = 85
+    Width = 6
+    Height = 13
+    Caption = 'Y'
+  end
+  object lblVertice2: TLabel
+    Left = 32
+    Top = 116
+    Width = 78
+    Height = 13
+    Caption = 'Segundo V'#233'rtice'
+  end
+  object lblX2: TLabel
+    Left = 32
+    Top = 138
+    Width = 6
+    Height = 13
+    Caption = 'X'
+  end
+  object lblY2: TLabel
+    Left = 100
+    Top = 137
+    Width = 6
+    Height = 13
+    Caption = 'Y'
+  end
+  object lblVertice3: TLabel
+    Left = 32
+    Top = 172
+    Width = 75
+    Height = 13
+    Caption = 'Terceiro V'#233'rtice'
+  end
+  object lblX3: TLabel
+    Left = 32
+    Top = 194
+    Width = 6
+    Height = 13
+    Caption = 'X'
+  end
+  object lblY3: TLabel
+    Left = 100
+    Top = 193
+    Width = 6
+    Height = 13
+    Caption = 'Y'
+  end
+  object lblPerimeter: TLabel
+    Left = 328
+    Top = 78
+    Width = 56
+    Height = 13
+    Caption = 'lblPerimeter'
+    Visible = False
+  end
+  object lblArea: TLabel
+    Left = 328
+    Top = 97
+    Width = 33
+    Height = 13
+    Caption = 'lblArea'
+    Visible = False
+  end
+  object Label1: TLabel
+    Left = 80
+    Top = 248
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object lblNotATriangle: TLabel
+    Left = 448
+    Top = 97
+    Width = 72
+    Height = 13
+    Caption = 'lblNotATriangle'
+    Visible = False
+  end
+  object pbxDrawing: TPaintBox
+    Left = 328
+    Top = 134
+    Width = 301
+    Height = 301
+    Color = clRed
+    ParentColor = False
+  end
+  object btnCalculate: TButton
+    Left = 32
+    Top = 232
+    Width = 89
+    Height = 33
+    Caption = 'Calcular'
+    TabOrder = 0
+    OnClick = btnCalculateClick
+  end
+  object edtX1: TEdit
+    Left = 44
+    Top = 82
+    Width = 45
+    Height = 21
+    TabOrder = 1
+  end
+  object edtY1: TEdit
+    Left = 112
+    Top = 82
+    Width = 45
+    Height = 21
+    TabOrder = 2
+  end
+  object btnClear: TButton
+    Left = 127
+    Top = 232
+    Width = 89
+    Height = 34
+    Caption = 'Limpar Campos'
+    TabOrder = 3
+    OnClick = btnClearClick
+  end
+  object edtX2: TEdit
+    Left = 44
+    Top = 135
+    Width = 45
+    Height = 21
+    TabOrder = 4
+  end
+  object edtY2: TEdit
+    Left = 112
+    Top = 134
+    Width = 45
+    Height = 21
+    TabOrder = 5
+  end
+  object edtX3: TEdit
+    Left = 44
+    Top = 191
+    Width = 45
+    Height = 21
+    TabOrder = 6
+  end
+  object edtY3: TEdit
+    Left = 112
+    Top = 190
+    Width = 45
+    Height = 21
+    TabOrder = 7
+  end
+end

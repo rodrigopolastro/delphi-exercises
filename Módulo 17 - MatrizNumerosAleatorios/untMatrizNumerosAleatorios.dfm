@@ -115,7 +115,7 @@ object frmMain: TfrmMain
   object memNumbersList: TMemo
     Left = 256
     Top = 80
-    Width = 52
+    Width = 64
     Height = 143
     Lines.Strings = (
       'mem'
@@ -132,6 +132,8 @@ object frmMain: TfrmMain
     Top = 53
     Width = 121
     Height = 21
+    Style = csDropDownList
+    ItemIndex = 0
     TabOrder = 4
     Text = 'Todos os N'#250'meros'
     Visible = False

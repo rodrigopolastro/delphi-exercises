@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids, Vcl.ValEdit;
 
 type
   TfrmMain = class(TForm)
@@ -128,7 +128,7 @@ begin
 		for i := 1 to listLength do
   		frmMain.memNumbersList.Lines.Append(IntToStr(list[i]))
   else
-  	frmMain.memNumbersList.Lines.Append('Lista Vazia');
+  	frmMain.memNumbersList.Lines.Append('...');
 end;
 
 procedure ShowListInfo(var list: numbersList; listLength: Integer);
@@ -156,7 +156,6 @@ begin
   end
   else
   	HideInfoComponents();
-
 end;
 
 procedure OrderNumbersList();
@@ -181,12 +180,9 @@ end;
 
 procedure FilterNumbersList(filterOption: Integer);
 	var list, filteredList: numbersList;
-  var listLength, filteredListLength, i, j: Integer;
+  var listLength, filteredListLength, i: Integer;
 begin
 	list := fullList;
-//  for j := 1 to fullListLength do
-
-//  frmMain.lblTitle.Caption := full
 	listLength := fullListLength;
   filteredListLength := 0;
 
@@ -239,10 +235,9 @@ begin
     end;
   end;
 
-  if filteredListLength > 0 then
+//  if filteredListLength > 0 then
   	ShowList(filteredList, filteredListLength);
   	ShowListInfo(filteredList, filteredListLength);
-
 end;
 
 procedure GenerateInitialList();

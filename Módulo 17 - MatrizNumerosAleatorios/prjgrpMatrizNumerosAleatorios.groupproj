@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CB2F5E21-1C39-4192-8B00-AFCBABDDCEE2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\TesteDeAptidao\prjTesteDeAptidao.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="prjMatrizNumerosAleatorios.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjTesteDeAptidao">
+        <MSBuild Projects="..\..\TesteDeAptidao\prjTesteDeAptidao.dproj"/>
+    </Target>
+    <Target Name="prjTesteDeAptidao:Clean">
+        <MSBuild Projects="..\..\TesteDeAptidao\prjTesteDeAptidao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjTesteDeAptidao:Make">
+        <MSBuild Projects="..\..\TesteDeAptidao\prjTesteDeAptidao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjMatrizNumerosAleatorios">
+        <MSBuild Projects="prjMatrizNumerosAleatorios.dproj"/>
+    </Target>
+    <Target Name="prjMatrizNumerosAleatorios:Clean">
+        <MSBuild Projects="prjMatrizNumerosAleatorios.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjMatrizNumerosAleatorios:Make">
+        <MSBuild Projects="prjMatrizNumerosAleatorios.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjTesteDeAptidao;prjMatrizNumerosAleatorios"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjTesteDeAptidao:Clean;prjMatrizNumerosAleatorios:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjTesteDeAptidao:Make;prjMatrizNumerosAleatorios:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
